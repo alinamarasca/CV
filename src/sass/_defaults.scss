@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.45em;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 90%;
+  min-width: 350px;
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+  padding: 1.6rem 0;
+  max-width: 1400px;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.icon {
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.thumbnail {
+  max-width: 400px;
+}

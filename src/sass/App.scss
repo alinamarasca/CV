@@ -1,0 +1,340 @@
+@use "defaults" as *;
+@use "abstracts" as *;
+@use "utilities" as *;
+@use "animation" as *;
+@use "cv" as *;
+
+body {
+  font-family: $font-stack;
+  @extend %bgr;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "aside intro"
+    "aside about"
+    "projects projects";
+  gap: 20px;
+}
+
+// Aside
+.general-info {
+  grid-area: aside;
+  @extend %section;
+  // photo
+  .photo {
+    min-width: 280px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: $lm;
+    z-index: 0;
+
+    img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 50%;
+      margin: auto;
+    }
+  }
+  // contact
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: auto;
+
+    svg {
+      margin: $sm;
+      font-size: 2.2rem;
+      color: $text-accent-color;
+      opacity: 0.8;
+      width: 36px;
+      cursor: pointer;
+    }
+
+    svg:hover {
+      color: $accent-color;
+    }
+  }
+
+  // location, languages, cv
+  .extra-info {
+    font-size: 1.125rem;
+    text-align: center;
+    margin: $lm;
+
+    p {
+      margin: $mm;
+    }
+
+    span {
+      @extend %small-header;
+    }
+  }
+  .cv-link {
+    text-align: center;
+  }
+  .download-cv {
+    @extend %small-header;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+// Hello!
+.intro {
+  grid-area: intro;
+  @extend %section;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  justify-self: center;
+
+  span {
+    color: $accent-color;
+    font-weight: 700;
+  }
+  h1 {
+    color: $text-accent-color;
+    margin-bottom: $lm;
+  }
+}
+// About
+.about {
+  grid-area: about;
+  @extend %section;
+  width: 100%;
+
+  span {
+    position: relative;
+    white-space: nowrap;
+  }
+
+  span::before {
+    @extend %highlighter;
+    background-color: lighten($accent-color, 30%);
+  }
+  // skills
+  .skills > div {
+    margin-top: $lm;
+
+    .section-title {
+      margin-bottom: $lm;
+      font-size: 1.8rem;
+    }
+
+    .icon {
+      margin: 0 $mm;
+    }
+  }
+}
+
+// Projects
+.projects {
+  @extend %section;
+  grid-area: projects;
+  padding-bottom: 4rem;
+  justify-self: center;
+
+  .project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .project-card {
+    @extend %card;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: $sm;
+  }
+
+  .project-name {
+    color: $text-accent-color;
+    position: relative;
+    margin: $sm 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: $sm 0;
+  }
+}
+// Modal
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  animation: showBackDrop 0.3s ease-out;
+  transition: all 0.3s;
+}
+
+.modal {
+  background-color: #fff;
+  box-shadow: $shadow;
+  justify-self: center;
+  max-width: 800px;
+  padding: $mm $lm;
+  display: flex;
+  flex-direction: column;
+  animation: showModal 1s ease-out;
+  transition: all 0.3s;
+
+  .close-modal {
+    color: $accent-color;
+    align-self: flex-end;
+    margin: $sm;
+
+    &:hover {
+      color: $text-accent-color;
+    }
+  }
+
+  form {
+    max-width: 100%;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+
+    .input-control {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      color: $text-accent-color;
+
+      input,
+      textarea {
+        width: 500px;
+        max-width: 100%;
+        height: 2rem;
+        padding: 2rem, 0.5rem;
+      }
+
+      textarea {
+        height: 400px;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: none;
+        outline: 2px solid $accent-color;
+      }
+    }
+  }
+  #submit {
+    font-size: 1.5rem;
+    background-color: $accent-color;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em;
+    margin: 1rem;
+    transition: 170ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: $text-accent-color;
+    }
+  }
+}
+
+// Responsive
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    display: block;
+  }
+
+  .general-info,
+  .intro,
+  .about,
+  .projects {
+    margin-bottom: 1rem;
+  }
+
+  .general-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas:
+      "a b c"
+      "d b c";
+    justify-content: start;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: top;
+
+    .photo {
+      grid-area: a;
+      height: 250px;
+      margin-bottom: 0;
+
+      img {
+        width: 200px;
+      }
+    }
+    .contact {
+      grid-area: b;
+      display: flex;
+      height: 250px;
+      flex-direction: column;
+    }
+    .extra-info {
+      grid-area: c;
+    }
+    .cv-link {
+      grid-area: d;
+      text-align: center;
+      display: flex;
+      flex-direction: column-reverse;
+
+      a {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .wrapper {
+    display: block;
+  }
+
+  .general-info,
+  .intro,
+  .about,
+  .projects {
+    margin-bottom: 1rem;
+  }
+
+  .general-info {
+    display: block;
+    justify-content: space-around;
+    .contact {
+      flex-direction: row;
+      height: fit-content;
+    }
+  }
+}
