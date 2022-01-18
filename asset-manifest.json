@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CV/static/css/main.a88f2c07.css",
-    "main.js": "/CV/static/js/main.5377839e.js",
+    "main.js": "/CV/static/js/main.03388853.js",
     "static/js/787.ac0f193d.chunk.js": "/CV/static/js/787.ac0f193d.chunk.js",
     "static/media/photo.jpg": "/CV/static/media/photo.c326f70a8d662e88e032.jpg",
     "static/media/front-end_Alina_Marasca_CV.pdf": "/CV/static/media/front-end_Alina_Marasca_CV.6d117c8914165882c708.pdf",
@@ -21,11 +21,11 @@
     "index.html": "/CV/index.html",
     "static/media/js.svg": "/CV/static/media/js.0dd1cf6c80bb500c655a.svg",
     "main.a88f2c07.css.map": "/CV/static/css/main.a88f2c07.css.map",
-    "main.5377839e.js.map": "/CV/static/js/main.5377839e.js.map",
+    "main.03388853.js.map": "/CV/static/js/main.03388853.js.map",
     "787.ac0f193d.chunk.js.map": "/CV/static/js/787.ac0f193d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a88f2c07.css",
-    "static/js/main.5377839e.js"
+    "static/js/main.03388853.js"
   ]
 }
