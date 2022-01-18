@@ -10,7 +10,7 @@ const projects = [
   {
     title: "My Portfolio",
     thumbnail: "cv",
-    url: "https://alinamarasca.github.io/jQuery-quizz/",
+    url: "https://alinamarasca.github.io/CV/",
     tools: ["react", "js", "sass", "html"]
   },
   //Hand and Paw
