@@ -2,12 +2,7 @@ import { React, useContext } from "react";
 import photo from "../img/photo.jpg";
 import cv from "../assets/front-end_Alina_Marasca_CV.pdf";
 
-import {
-  BsFillEnvelopeFill,
-  BsGithub,
-  // BsFillCalendarDateFill,
-  BsLinkedin
-} from "react-icons/bs";
+import { BsFillEnvelopeFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
 import ModalContext from "../contexts/ModalContext/ModalContext";
 import MessageForm from "../components/shared/MessageForm";
@@ -33,7 +28,6 @@ function GeneralInfo() {
             window.open("https://github.com/alinamarasca", "_blank").focus
           }
         />
-        {/* <BsFillCalendarDateFill onClick={e => handleClickAppointment()} /> */}
         <BsLinkedin
           onClick={e =>
             window.open(
