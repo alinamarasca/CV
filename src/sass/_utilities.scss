@@ -12,11 +12,6 @@
   backdrop-filter: blur(2px);
 }
 
-.section-title {
-  color: $text-accent-color;
-  margin-bottom: $mm;
-}
-
 %highlighter {
   content: "";
   position: absolute;
@@ -38,7 +33,7 @@
   font-size: 1rem;
   border-radius: 2px;
   box-shadow: 8px 8px 0px #00b4e0;
-  max-width: 330px;
+  max-width: 350px;
   min-width: 300px;
   padding: 0.2rem;
 
@@ -49,6 +44,6 @@
 }
 
 %small-header {
-  color: $text-accent-color;
+  color: $dark-accent-color;
   font-weight: 600;
 }
