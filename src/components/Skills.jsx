@@ -1,22 +1,21 @@
 import React from "react";
-import ShowImg from "./ShowImg";
-import skillSet from "../data/skills";
+import { practising, learning } from "../data/skills";
 import Title from "../components/Title";
+import CreateSkill from "./CreateSkill";
 
 function Skills() {
-  const { practising, learning } = skillSet;
   return (
     <div className="skills">
+      <Title title={"Practising"} />
       <div className="practising">
-        <Title title={"Practising"} />
-        {practising.map(icon => {
-          return ShowImg("icons", icon, "svg", "icon", `${icon}-icon`);
+        {practising.map(skill => {
+          return CreateSkill(skill);
         })}
       </div>
+      <Title title={"Learning"} />
       <div className="learning">
-        <Title title={"Learning"} />
-        {learning.map(icon => {
-          return ShowImg("icons", icon, "svg", "icon", `${icon}-icon`);
+        {learning.map(skill => {
+          return CreateSkill(skill);
         })}
       </div>
     </div>
