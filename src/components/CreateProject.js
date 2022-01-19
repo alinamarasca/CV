@@ -1,10 +1,10 @@
 import ShowImg from "./ShowImg";
 
 const CreateProject = project => {
-  const { title, thumbnail, url, tools, index } = project;
+  const { title, thumbnail, url, tools } = project;
 
   return (
-    <div className="project-card" key={index}>
+    <div className="project-card">
       <a href={url} target="_blank" rel="noreferrer">
         {ShowImg(
           "projects",
