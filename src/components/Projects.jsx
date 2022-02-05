@@ -8,8 +8,8 @@ function Projects() {
     <div className="projects">
       <Title title="Projects" />
       <div className="project-cards">
-        {projects.map(project => {
-          return CreateProject(project);
+        {projects.map((project, index) => {
+          return CreateProject(project, index);
         })}
       </div>
     </div>

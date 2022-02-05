@@ -1,10 +1,10 @@
 import ShowImg from "./ShowImg";
 import { BsLink45Deg, BsGithub } from "react-icons/bs";
 
-const CreateProject = project => {
+const CreateProject = (project, index) => {
   const { title, thumbnail, url, repo, tools } = project;
   return (
-    <div className="project-card">
+    <div className="project-card" key={index}>
       <div className="preview">
         <div className="control">
           <a href={url} target="_blank" rel="noreferrer">
@@ -26,8 +26,8 @@ const CreateProject = project => {
         <h4 className="project-name">{title}</h4>
       </div>
       <div className="description">
-        {tools.map(tool =>
-          ShowImg("icons", tool, "svg", "icon", `${tool}-icon`)
+        {tools.map((tool, index) =>
+          ShowImg("icons", tool, "svg", "icon", `${tool}-icon`, index)
         )}
       </div>
     </div>

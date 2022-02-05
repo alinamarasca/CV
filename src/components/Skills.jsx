@@ -6,16 +6,16 @@ import CreateSkill from "./CreateSkill";
 function Skills() {
   return (
     <div className="skills">
-      <Title title={"Practising"} />
+      <Title title={"Skills"} />
       <div className="practising">
-        {practising.map(skill => {
-          return CreateSkill(skill);
+        {practising.map((skill, index) => {
+          return CreateSkill(skill, index);
         })}
       </div>
       <Title title={"Learning"} />
       <div className="learning">
-        {learning.map(skill => {
-          return CreateSkill(skill);
+        {learning.map((skill, index) => {
+          return CreateSkill(skill, index);
         })}
       </div>
     </div>
