@@ -1,5 +1,5 @@
 import React from "react";
-import ShowImg from "./ShowImg";
+import ShowImg from "./ShowImg.jsx";
 
 function CreateSkill(skill, index) {
   return (

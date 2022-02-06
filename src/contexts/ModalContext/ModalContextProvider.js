@@ -2,13 +2,13 @@ import { React, useState } from "react";
 import Modal from "../../components/shared/Modal";
 import ModalContext from "./ModalContext";
 
-const ModalProvider = ({ children }) => {
+// const ModalProvider = ({ children }) => {
+const ModalProvider = () => {
   const [modalOpened, setModalOpened] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
   const openModal = modalConfig => {
-    // eslint-disable-next-line
-    const { children } = modalConfig;
+    // const { children } = modalConfig;
     setModalContent(modalConfig);
     setModalOpened(true);
   };
@@ -25,7 +25,7 @@ const ModalProvider = ({ children }) => {
   return (
     <ModalContext.Provider value={valueModalProvider}>
       {modalOpened && <Modal {...modalContent} />}
-      {children}
+      {/* {children} */}
     </ModalContext.Provider>
   );
 };

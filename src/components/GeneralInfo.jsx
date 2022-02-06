@@ -1,20 +1,22 @@
-import { React, useContext } from "react";
+// import { React, useContext } from "react";
+import React from "react";
 import photo from "../img/photo.jpg";
 import cv from "../assets/front-end_Alina_Marasca_CV.pdf";
 
 import { BsFillEnvelopeFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
-import ModalContext from "../contexts/ModalContext/ModalContext";
-import MessageForm from "../components/shared/MessageForm";
+// import ModalContext from "../contexts/ModalContext/ModalContext";
+// import MessageForm from "../components/shared/MessageForm";
 
 function GeneralInfo() {
-  const { openModal } = useContext(ModalContext);
+  // const { openModal } = useContext(ModalContext);
 
   const handleClickGmail = () => {
-    openModal(MessageForm());
-    openModal({
-      children: MessageForm()
-    });
+    console.log("hoi");
+    // openModal(MessageForm());
+    // openModal({
+    //   children: MessageForm()
+    // });
   };
 
   return (

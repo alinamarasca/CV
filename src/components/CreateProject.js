@@ -1,5 +1,5 @@
 import React from "react";
-import ShowImg from "./ShowImg";
+import ShowImg from "./ShowImg.jsx";
 import { BsLink45Deg, BsGithub } from "react-icons/bs";
 
 const CreateProject = (project, index) => {
