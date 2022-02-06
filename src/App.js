@@ -1,4 +1,5 @@
 import "./sass/App.scss";
+import React from "react";
 import ModalProvider from "./contexts/ModalContext/ModalContextProvider";
 import About from "./components/About";
 import Projects from "./components/Projects";

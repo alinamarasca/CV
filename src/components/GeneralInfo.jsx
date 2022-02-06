@@ -11,6 +11,7 @@ function GeneralInfo() {
   const { openModal } = useContext(ModalContext);
 
   const handleClickGmail = () => {
+    openModal(MessageForm());
     openModal({
       children: MessageForm()
     });

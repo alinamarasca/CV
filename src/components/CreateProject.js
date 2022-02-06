@@ -1,3 +1,4 @@
+import React from "react";
 import ShowImg from "./ShowImg";
 import { BsLink45Deg, BsGithub } from "react-icons/bs";
 
@@ -7,10 +8,10 @@ const CreateProject = (project, index) => {
     <div className="project-card" key={index}>
       <div className="preview">
         <div className="control">
-          <a href={url} target="_blank" rel="noreferrer">
+          <a href={url} target="_blank" rel="noopener noreferrer">
             <BsLink45Deg />
           </a>
-          <a href={repo} target="_blank" rel="noreferrer">
+          <a href={repo} target="_blank" rel="noopener noreferrer">
             {" "}
             <BsGithub />
           </a>

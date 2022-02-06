@@ -7,6 +7,7 @@ const ModalProvider = ({ children }) => {
   const [modalContent, setModalContent] = useState(null);
 
   const openModal = modalConfig => {
+    // eslint-disable-next-line
     const { children } = modalConfig;
     setModalContent(modalConfig);
     setModalOpened(true);
