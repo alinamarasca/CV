@@ -1,31 +1,19 @@
-// import { React, useContext } from "react";
-import React from "react";
+import React, { useContext } from "react";
 import photo from "../img/photo.jpg";
 import cv from "../assets/front-end_Alina_Marasca_CV.pdf";
-
 import { BsFillEnvelopeFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
-// import ModalContext from "../contexts/ModalContext/ModalContext";
-// import MessageForm from "../components/shared/MessageForm";
+import ModalContext from "../contexts/ModalContext";
 
 function GeneralInfo() {
-  // const { openModal } = useContext(ModalContext);
-
-  const handleClickGmail = () => {
-    console.log("hoi");
-    // openModal(MessageForm());
-    // openModal({
-    //   children: MessageForm()
-    // });
-  };
-
+  const { openModal } = useContext(ModalContext);
   return (
     <div className="general-info">
       <div className="photo">
         <img src={photo} alt="Alina Marasca" />
       </div>
       <div className="contact">
-        <BsFillEnvelopeFill onClick={e => handleClickGmail()} />
+        <BsFillEnvelopeFill onClick={e => openModal()} />
         <BsGithub
           onClick={e =>
             window.open("https://github.com/alinamarasca", "_blank").focus
