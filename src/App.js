@@ -35,7 +35,6 @@ function App() {
     <>
       <ModalContext.Provider value={modalControl}>
         <Router>
-          <button onClick={e => openModal()}>CLICK</button>
           <div className="wrapper">
             <Routes>
               <Route
