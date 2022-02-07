@@ -202,30 +202,31 @@ body {
     height: 100%;
     position: relative;
   }
-  .control {
-    box-shadow: $shadow;
-    backdrop-filter: blur(6px);
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25%;
-    width: 36%;
-    opacity: 0;
-    transition: 200ms ease-in;
+}
 
-    svg {
-      color: #fff;
-      text-decoration: none;
-      margin: $sm;
-      color: $dark-accent-color;
+.control {
+  box-shadow: $shadow;
+  backdrop-filter: blur(6px);
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  width: 36%;
+  opacity: 0;
+  transition: 200ms ease-in;
 
-      &:hover {
-        color: $accent-color;
-      }
+  svg {
+    color: #fff;
+    text-decoration: none;
+    margin: $sm;
+    color: $dark-accent-color;
+
+    &:hover {
+      color: $accent-color;
     }
   }
 }

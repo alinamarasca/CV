@@ -40,7 +40,10 @@ a {
   max-width: 400px;
 }
 
-.general-info, .intro, .about, .projects {
+.general-info,
+.intro,
+.about,
+.projects {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 2px;
   box-shadow: 12px 12px 8px rgba(0, 0, 0, 0.2);
@@ -87,7 +90,8 @@ body {
   border-bottom: 1px solid #00b4e0;
 }
 
-.general-info .extra-info span, .general-info .download-cv {
+.general-info .extra-info span,
+.general-info .download-cv {
   color: #005aa1;
   font-weight: 600;
 }
@@ -325,9 +329,9 @@ body {
   }
 
   .general-info,
-.intro,
-.about,
-.projects {
+  .intro,
+  .about,
+  .projects {
     margin-bottom: 1rem;
   }
 
@@ -373,9 +377,9 @@ body {
   }
 
   .general-info,
-.intro,
-.about,
-.projects {
+  .intro,
+  .about,
+  .projects {
     margin-bottom: 1rem;
   }
 
@@ -389,4 +393,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=App.css.map */
+/* # sourceMappingURL=App.css.map */

@@ -264,7 +264,8 @@ body {
   height: 100%;
   position: relative;
 }
-.projects .control {
+
+.control {
   box-shadow: 12px 12px 8px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(6px);
   position: absolute;
@@ -279,13 +280,13 @@ body {
   opacity: 0;
   transition: 200ms ease-in;
 }
-.projects .control svg {
+.control svg {
   color: #fff;
   text-decoration: none;
   margin: 0.4rem;
   color: #005aa1;
 }
-.projects .control svg:hover {
+.control svg:hover {
   color: #00b4e0;
 }
 
