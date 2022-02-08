@@ -31,11 +31,10 @@ function App() {
       <ModalContext.Provider value={modalControl}>
         <div className="wrapper">
           <Routes>
-            <Route path="/CV" element={<Navigate to="/" />} />
-            <Route path="/cv" element={<Navigate to="/" />} />
+            <Route path="/cv" element={<Navigate to="/CV" />} />
             <Route
               exact
-              path="/"
+              path="/CV"
               element={
                 <>
                   <Intro />

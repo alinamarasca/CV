@@ -2,7 +2,7 @@
   "name": "cv_react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alinamarasca.github.io",
+  "homepage": "https://alinamarasca.github.io/CV",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
