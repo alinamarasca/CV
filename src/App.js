@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Intro from "./components/Intro";
@@ -34,27 +29,25 @@ function App() {
   return (
     <>
       <ModalContext.Provider value={modalControl}>
-        <Router>
-          <div className="wrapper">
-            <Routes>
-              <Route
-                exact
-                path="/"
-                element={
-                  <>
-                    <Intro />
-                    <GeneralInfo />
-                    <About />
-                    <Projects />
-                    <Modal open={isOpen} children={MessageForm()} />
-                  </>
-                }
-              ></Route>
-              <Route path="/CV" element={<Navigate to="/" />} />
-              <Route path="/cv" element={<Navigate to="/" />} />
-            </Routes>
-          </div>
-        </Router>
+        <div className="wrapper">
+          <Routes>
+            <Route path="/CV" element={<Navigate to="/" />} />
+            <Route path="/cv" element={<Navigate to="/" />} />
+            <Route
+              exact
+              path="/"
+              element={
+                <>
+                  <Intro />
+                  <GeneralInfo />
+                  <About />
+                  <Projects />
+                  <Modal open={isOpen} children={MessageForm()} />
+                </>
+              }
+            ></Route>
+          </Routes>
+        </div>
       </ModalContext.Provider>
     </>
   );
