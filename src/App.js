@@ -50,7 +50,8 @@ function App() {
                   </>
                 }
               ></Route>
-              <Route path="/*" element={<Navigate to="/" />} />
+              <Route path="/CV" element={<Navigate to="/" />} />
+              <Route path="/cv" element={<Navigate to="/" />} />
             </Routes>
           </div>
         </Router>
