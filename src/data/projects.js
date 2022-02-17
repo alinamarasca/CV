@@ -22,7 +22,14 @@ const projects = [
     url: "https://handandpaw.herokuapp.com/",
     repo: "https://github.com/alinamarasca/hand-and-paw",
     tools: ["js", "html", "css"]
+  },
+  //Zipfs law
+  {
+    title: "Lingvobutcher - based on Zipfs law",
+    thumbnail: "zipfs",
+    url: "https://alinamarasca.github.io/zipfs-law/index/",
+    repo: "https://github.com/alinamarasca/zipfs-law",
+    tools: ["react", "sass"]
   }
-  //
 ];
 export default projects;

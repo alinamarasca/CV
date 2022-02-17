@@ -74,10 +74,15 @@ body {
     text-align: center;
   }
   .download-cv {
-    @extend %small-header;
+    // @extend %small-header;
+    background-color: $bright-accent-color;
+    color: #fff;
+    font-weight: 800;
+    padding: $sm;
+    border-radius: 5px;
 
     &:hover {
-      color: $accent-color;
+      background-color: $accent-color;
     }
   }
 }
@@ -140,6 +145,15 @@ body {
       .icon {
         margin: 0 $mm;
       }
+    }
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 3px dashed $accent-color;
+
+    &:hover {
+      color: $accent-color;
     }
   }
 }
