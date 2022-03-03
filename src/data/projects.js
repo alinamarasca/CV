@@ -27,7 +27,7 @@ const projects = [
   {
     title: "Lingvobutcher - based on Zipfs law",
     thumbnail: "zipfs",
-    url: "https://alinamarasca.github.io/zipfs-law/index/",
+    url: "https://alinamarasca.github.io/zipfs-law/",
     repo: "https://github.com/alinamarasca/zipfs-law",
     tools: ["react", "sass"]
   }
