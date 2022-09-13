@@ -38,7 +38,7 @@ body {
   .contact {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 280px;
     margin: auto;
 
@@ -98,7 +98,7 @@ body {
 
   span {
     color: $accent-color;
-    font-weight: 700;
+    font-weight: 600;
   }
   h1 {
     color: $dark-accent-color;
@@ -145,6 +145,9 @@ body {
       .icon {
         margin: 0 $mm;
       }
+    }
+    p {
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -277,7 +280,7 @@ body {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
 
     .input-control {
       display: flex;
@@ -359,6 +362,7 @@ body {
       display: flex;
       height: 250px;
       flex-direction: column;
+      justify-content: space-between;
     }
     .extra-info {
       grid-area: c;

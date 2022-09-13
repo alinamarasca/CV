@@ -1,4 +1,6 @@
 const practising = [
+  { skill: "angular", name: "Angular" },
+  { skill: "nx", name: "Nx-workspace" },
   { skill: "js", name: "JavaScript" },
   { skill: "sass", name: "SASS" },
   { skill: "html", name: "HTML5" },

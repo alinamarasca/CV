@@ -1,3 +1,4 @@
+/* general */
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +6,15 @@
 }
 
 body {
-  font-size: 1.45em;
-  line-height: 150%;
+  /* line-height: 150%;
   font-weight: 500;
+  font-size: 1.3rem;
+  background-color: #fff;
+  opacity: 1;
+  background-image: radial-gradient(rgba(0, 180, 224, 0.3) 2px, #fff 3px);
+  background-size: 15px 15px;
+  font-family: "Montserrat", sans-serif; */
+  background-color: red;
 }
 
 .wrapper {
@@ -18,8 +25,13 @@ body {
   justify-content: center;
   padding: 1.6rem 0;
   max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "aside intro" "aside about" "projects projects";
+  gap: 40px;
 }
 
+/* buttons, icons. links */
 button {
   border: 0;
   background-color: transparent;
@@ -35,14 +47,12 @@ button:hover {
 a {
   text-decoration: none;
 }
-
-.thumbnail {
-  max-width: 400px;
-}
+/* sections */
 
 .general-info,
 .intro,
 .about,
+.skills,
 .projects {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 2px;
@@ -51,7 +61,7 @@ a {
   max-width: 1400px;
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  padding: 0;
   backdrop-filter: blur(2px);
 }
 
@@ -68,59 +78,6 @@ a {
   width: 100%;
   opacity: 0.8;
   z-index: -1;
-}
-
-body {
-  background-color: #fff;
-  opacity: 1;
-  background-image: radial-gradient(rgba(0, 180, 224, 0.3) 2px, #fff 3px);
-  background-size: 15px 15px;
-}
-
-.projects .project-card {
-  font-size: 1rem;
-  border-radius: 2px;
-  box-shadow: 8px 8px 0px #00b4e0;
-  max-width: 330px;
-  min-width: 300px;
-  padding: 0.2rem;
-}
-.projects .project-card img:not(.icon) {
-  width: 100%;
-  border-bottom: 1px solid #00b4e0;
-}
-
-.general-info .extra-info span,
-.general-info .download-cv {
-  color: #005aa1;
-  font-weight: 600;
-}
-
-@keyframes showBackDrop {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes showModal {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas: "aside intro" "aside about" "projects projects";
-  gap: 20px;
 }
 
 .general-info {
@@ -160,7 +117,7 @@ body {
   color: #00b4e0;
 }
 .general-info .extra-info {
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-align: center;
   margin: 1.6rem;
 }
@@ -187,18 +144,20 @@ body {
 }
 .intro h1 {
   color: #005aa1;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
 }
 
 .about {
   grid-area: about;
   width: 100%;
 }
-.about span {
+.about span,
+.skills span {
   position: relative;
   white-space: nowrap;
 }
-.about span::before {
+.about span::before,
+.skills span::before {
   background-color: #7ae5ff;
 }
 .about .skills > div {
@@ -216,6 +175,9 @@ body {
   grid-area: projects;
   padding-bottom: 4rem;
   justify-self: center;
+}
+.thumbnail {
+  max-width: 400px;
 }
 .projects .project-cards {
   display: flex;
@@ -323,6 +285,43 @@ body {
   background-color: #005aa1;
 }
 
+// projects
+.projects .project-card {
+  font-size: 1rem;
+  border-radius: 2px;
+  box-shadow: 8px 8px 0px #00b4e0;
+  max-width: 330px;
+  min-width: 300px;
+  padding: 0.2rem;
+}
+.projects .project-card img:not(.icon) {
+  width: 100%;
+  border-bottom: 1px solid #00b4e0;
+}
+
+.general-info .extra-info span,
+.general-info .download-cv {
+  color: #005aa1;
+  font-weight: 600;
+}
+
+@keyframes showBackDrop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .wrapper {
     display: block;
@@ -371,6 +370,8 @@ body {
     text-align: center;
   }
 }
+
+// responsive
 @media only screen and (max-width: 650px) {
   .wrapper {
     display: block;
@@ -392,5 +393,4 @@ body {
     height: fit-content;
   }
 }
-
 /* # sourceMappingURL=App.css.map */

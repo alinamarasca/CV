@@ -1,4 +1,12 @@
 const projects = [
+  // Mars rover
+  {
+    title: "Mars Rover photos",
+    thumbnail: "mars",
+    url: "https://alinamarasca.github.io/mars/",
+    repo: "https://github.com/alinamarasca/mars",
+    tools: ["react", "sass", "html", "api"]
+  },
   //Silly quiz
   {
     title: "Silly Quiz",

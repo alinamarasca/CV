@@ -12,18 +12,30 @@ function Skills() {
           return CreateSkill(skill, index);
         })}
       </div>
-      <Title title={"Current project"} />
+      <Title title={"What's up?"} />
       <div className="learning">
         <p>
-          I am working on{" "}
-          <a href="https://alinamarasca.github.io/zipfs-law/">
-            Lingvobutcher app
+          Currently I am employed as analyst-developer intern at{" "}
+          <a href="https://www.forcit.co/">Forcit</a>. During the internship I
+          have been involved in a few projects with focus on{" "}
+          <span>front-end</span> and <span>UI/UX</span>. My main learning
+          objectives are <span>Angular</span>, <span>NX-workspace</span> and{" "}
+          <span>SASS</span>.{" "}
+        </p>
+        {"\n"}
+        <p>
+          {" "}
+          Apart from internship I am helping{" "}
+          <a href="https://www.linkedin.com/in/laurentdecraene/?lipi=urn%3Ali%3Apage%3Amessaging_thread%3Bc6ec1b3f-c665-4d10-8ab0-8385256db475">
+            Laurent De Craene{" "}
           </a>{" "}
-          inspired by{" "}
-          <a href="https://en.wikipedia.org/wiki/Zipf%27s_law">Zipf's law</a>{" "}
-          which states that frequency of any word is inversely proportional to
-          its rank in the frequency table. I was fascinated with this fact and
-          thought it would be a fun idea for a project.{" "}
+          with his application 'Creep Alert' as <span>UI/UX designer</span>.
+        </p>
+        {"\n"}
+        <p>
+          Since 11th September I am following <span>Typescript course</span>{" "}
+          organized by{" "}
+          <a href="https://hackyourfuture.be/digitalents/"> HackYourFuture</a>.
         </p>
       </div>
     </div>
