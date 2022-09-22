@@ -172,6 +172,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 2rem;
   }
 
   .project-card {
@@ -230,7 +231,7 @@ body {
     color: #fff;
     text-decoration: none;
     margin: $sm;
-    color: $dark-accent-color;
+    color: $bright-accent-color;
 
     &:hover {
       color: $accent-color;

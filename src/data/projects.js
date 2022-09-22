@@ -7,6 +7,13 @@ const projects = [
     repo: "https://github.com/alinamarasca/mars",
     tools: ["react", "sass", "html", "api"]
   },
+  // Blue campers
+  {
+    title: "BlueCampers",
+    thumbnail: "bc",
+    url: "https://www.bluecampers.com/",
+    tools: ["angular", "nx", "bs", "sass", "material", "html"]
+  },
   //Silly quiz
   {
     title: "Silly Quiz",
