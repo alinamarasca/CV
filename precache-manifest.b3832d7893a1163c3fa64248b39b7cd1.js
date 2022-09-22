@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "975c6c8160f61f2ece00f40b25516649",
+    "revision": "ea4c72f1ee3799e2039f27bef1145057",
     "url": "/CV/index.html"
   },
   {
-    "revision": "c8201e840bb5703c3efb",
-    "url": "/CV/static/css/main.7385da48.chunk.css"
+    "revision": "ae7069b2a8a169c2c128",
+    "url": "/CV/static/css/main.2a273aa6.chunk.css"
   },
   {
     "revision": "1dff44a9239f3204c6ce",
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/js/2.2ea316f9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ca4f3f33954c744bd526",
-    "url": "/CV/static/js/3.5a54822f.chunk.js"
+    "revision": "a68f55d12f80c3975074",
+    "url": "/CV/static/js/3.67cdf540.chunk.js"
   },
   {
-    "revision": "c8201e840bb5703c3efb",
-    "url": "/CV/static/js/main.09000eff.chunk.js"
+    "revision": "ae7069b2a8a169c2c128",
+    "url": "/CV/static/js/main.e76c2add.chunk.js"
   },
   {
-    "revision": "85749f61205a52268e80",
-    "url": "/CV/static/js/runtime-main.291642f8.js"
+    "revision": "ec5bfb4c94bbd79927f9",
+    "url": "/CV/static/js/runtime-main.fbe87ae8.js"
   },
   {
     "revision": "1b5a4760ed87e1977951599006b3eb7b",
@@ -34,6 +34,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "14b861f1717d47ce0afb122b3c3d3eac",
     "url": "/CV/static/media/api.14b861f1.svg"
+  },
+  {
+    "revision": "014afa904f368180452e9d123470cf0a",
+    "url": "/CV/static/media/bc.014afa90.jpg"
+  },
+  {
+    "revision": "07fc8e033e99d1ef7d905d3d5551a1d0",
+    "url": "/CV/static/media/bs.07fc8e03.svg"
   },
   {
     "revision": "b7b3faa944d2b22e5a0de0279b9db241",
@@ -52,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/media/cv.6b74e918.svg"
   },
   {
-    "revision": "c6720065ee629529e46b7fadaf95c6a4",
-    "url": "/CV/static/media/front-end_Alina_Marasca_CV.c6720065.pdf"
+    "revision": "b7d7c2482da864ce68cb04d141dac03a",
+    "url": "/CV/static/media/front-end_Alina_Marasca_CV.b7d7c248.pdf"
   },
   {
     "revision": "1acf12649c0fc70b4441430701fc1587",
@@ -82,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "302f371ea08a1f7b15dd3c7f709ca62b",
     "url": "/CV/static/media/mars.302f371e.jpg"
+  },
+  {
+    "revision": "51908d952db125f70543415cd2d1209e",
+    "url": "/CV/static/media/material.51908d95.svg"
   },
   {
     "revision": "89ccb09060a7adf788ea2340c54d6d78",
