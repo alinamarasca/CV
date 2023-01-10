@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be8f8a1b8da82e796450c574d09e864d",
+    "revision": "afd3e25d4811943ed7865f5c470056ce",
     "url": "/CV/index.html"
   },
   {
-    "revision": "82db22dc7d7a88a492be",
-    "url": "/CV/static/css/main.77cfe0fc.chunk.css"
+    "revision": "6687bd1f12f96306f465",
+    "url": "/CV/static/css/main.fabcc96d.chunk.css"
   },
   {
     "revision": "1dff44a9239f3204c6ce",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/js/3.51047106.chunk.js"
   },
   {
-    "revision": "82db22dc7d7a88a492be",
-    "url": "/CV/static/js/main.320ff584.chunk.js"
+    "revision": "6687bd1f12f96306f465",
+    "url": "/CV/static/js/main.da07588e.chunk.js"
   },
   {
     "revision": "19def04da811de8bd713",
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/media/cv.6b74e918.svg"
   },
   {
-    "revision": "b7d7c2482da864ce68cb04d141dac03a",
-    "url": "/CV/static/media/front-end_Alina_Marasca_CV.b7d7c248.pdf"
+    "revision": "66a265c631d30682ae5516ef33f81d60",
+    "url": "/CV/static/media/front-end_Alina_Marasca_CV.66a265c6.pdf"
   },
   {
     "revision": "1acf12649c0fc70b4441430701fc1587",
@@ -108,14 +108,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/media/photo.d7158e57.jpg"
   },
   {
-    "revision": "89b09c2495de763e45359270c7a24d4a",
-    "url": "/CV/static/media/photo1.89b09c24.jpg"
-  },
-  {
-    "revision": "178edffc891a79f7ce8d5c7f4e7c8eaf",
-    "url": "/CV/static/media/photo3.178edffc.jpg"
-  },
-  {
     "revision": "e43d23dd11ea943f62b10e75fb812ad7",
     "url": "/CV/static/media/quiz.e43d23dd.jpg"
   },
@@ -124,8 +116,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/media/react.8c728ff1.svg"
   },
   {
+    "revision": "f7177acbd09a43ff3b89f6a220e42bc9",
+    "url": "/CV/static/media/rxjs.f7177acb.svg"
+  },
+  {
     "revision": "99a250eec05e1aa7b6035ffbe6c15460",
     "url": "/CV/static/media/sass.99a250ee.svg"
+  },
+  {
+    "revision": "3de182d2120823fe49c27eeb1765c53a",
+    "url": "/CV/static/media/typescript.3de182d2.svg"
   },
   {
     "revision": "5cf143ed92021957d964c5f44295d9a2",
