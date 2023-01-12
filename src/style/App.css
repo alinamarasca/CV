@@ -114,7 +114,8 @@ a {
   cursor: pointer;
 }
 .general-info .contact svg:hover {
-  color: #00b4e0;
+  color: $dark-accent-color;
+  color: $hover-color;
 }
 .general-info .extra-info {
   font-size: 1rem;
@@ -128,7 +129,8 @@ a {
   text-align: center;
 }
 .general-info .download-cv:hover {
-  color: #00b4e0;
+  color: $dark-accent-color;
+  background-color: $hover-color;
 }
 
 .intro {
@@ -139,7 +141,7 @@ a {
   justify-self: center;
 }
 .intro span {
-  color: #00b4e0;
+  color: $dark-accent-color;
   font-weight: 700;
 }
 .intro h1 {
@@ -234,7 +236,7 @@ a {
   transition: all 0.3s;
 }
 .modal .close-modal {
-  color: #00b4e0;
+  color: $dark-accent-color;
   align-self: flex-end;
   margin: 0.4rem;
 }
@@ -268,11 +270,11 @@ a {
 .modal form .input-control input:focus,
 .modal form .input-control textarea:focus {
   border: none;
-  outline: 2px solid #00b4e0;
+  outline: 2px solid $dark-accent-color;
 }
 .modal #submit {
   font-size: 1.5rem;
-  background-color: #00b4e0;
+  background-color: $dark-accent-color;
   color: #fff;
   width: fit-content;
   height: fit-content;
@@ -289,14 +291,14 @@ a {
 .projects .project-card {
   font-size: 1rem;
   border-radius: 2px;
-  box-shadow: 8px 8px 0px #00b4e0;
+  box-shadow: 8px 8px 0px $dark-accent-color;
   max-width: 330px;
   min-width: 300px;
   padding: 0.2rem;
 }
 .projects .project-card img:not(.icon) {
   width: 100%;
-  border-bottom: 1px solid #00b4e0;
+  border-bottom: 1px solid $dark-accent-color;
 }
 
 .general-info .extra-info span,

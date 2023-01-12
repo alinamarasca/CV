@@ -5,7 +5,6 @@ const ShowImg = (folder, fileName, format, className, alt, index) => {
     <img
       key={index}
       className={className}
-      // src={require(`../public/img/${folder}/${fileName}.${format}`)}
       src={require(`../img/${folder}/${fileName}.${format}`)}
       alt={alt}
     />

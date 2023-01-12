@@ -84,14 +84,14 @@ body {
 .projects .project-card {
   font-size: 1rem;
   border-radius: 2px;
-  box-shadow: 8px 8px 0px #00b4e0;
+  box-shadow: 8px 8px 0px $dark-accent-color;
   max-width: 350px;
   min-width: 300px;
   padding: 0.2rem;
 }
 .projects .project-card img:not(.icon) {
   width: 100%;
-  border-bottom: 1px solid #00b4e0;
+  border-bottom: 1px solid $dark-accent-color;
 }
 
 .general-info .extra-info span,
@@ -159,7 +159,7 @@ body {
   cursor: pointer;
 }
 .general-info .contact svg:hover {
-  color: #00b4e0;
+  color: $dark-accent-color;
 }
 .general-info .extra-info {
   font-size: 1rem;
@@ -173,7 +173,7 @@ body {
   text-align: center;
 }
 .general-info .download-cv:hover {
-  color: #00b4e0;
+  color: $dark-accent-color;
 }
 
 .intro {
@@ -184,7 +184,7 @@ body {
   justify-self: center;
 }
 .intro span {
-  color: #00b4e0;
+  color: $dark-accent-color;
   font-weight: 700;
 }
 .intro h1 {
@@ -291,7 +291,7 @@ body {
   color: #005aa1;
 }
 .control svg:hover {
-  color: #00b4e0;
+  color: $dark-accent-color;
 }
 
 .backdrop {
@@ -326,7 +326,7 @@ body {
   margin: 0.4rem;
 }
 .modal .close-modal:hover {
-  color: #00b4e0;
+  color: $dark-accent-color;
 }
 .modal form {
   max-width: 100%;
@@ -355,7 +355,7 @@ body {
 .modal form .input-control input:focus,
 .modal form .input-control textarea:focus {
   border: none;
-  outline: 2px solid #00b4e0;
+  outline: 2px solid $dark-accent-color;
 }
 .modal #submit {
   font-size: 1rem;
@@ -369,7 +369,7 @@ body {
 }
 .modal #submit:hover {
   transform: scale(1.05);
-  background-color: #00b4e0;
+  background-color: $dark-accent-color;
 }
 
 @media only screen and (max-width: 1000px) {

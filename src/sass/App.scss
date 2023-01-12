@@ -52,7 +52,7 @@ body {
     }
 
     svg:hover {
-      color: $accent-color;
+      color: $hover-color;
     }
   }
 
@@ -74,7 +74,6 @@ body {
     text-align: center;
   }
   .download-cv {
-    // @extend %small-header;
     background-color: $bright-accent-color;
     color: #fff;
     font-weight: 800;
@@ -82,7 +81,7 @@ body {
     border-radius: 5px;
 
     &:hover {
-      background-color: $accent-color;
+      background-color: $hover-color;
     }
   }
 }
@@ -152,11 +151,13 @@ body {
   }
 
   a {
-    color: inherit;
+    color: $accent-color;
     border-bottom: 3px dashed $accent-color;
 
     &:hover {
-      color: $accent-color;
+      color: $hover-color;
+
+      border-bottom: 3px dashed $accent-color;
     }
   }
 }
@@ -234,7 +235,7 @@ body {
     color: $bright-accent-color;
 
     &:hover {
-      color: $accent-color;
+      color: $hover-color;
     }
   }
 }
@@ -327,10 +328,6 @@ body {
 
 // Responsive
 @media only screen and (max-width: 1000px) {
-  // .wrapper {
-  //   display: block;
-  // }
-
   .general-info,
   .intro,
   .about,

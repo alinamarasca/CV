@@ -25,21 +25,21 @@
 %bgr {
   background-color: #fff;
   opacity: 1;
-  background-image: radial-gradient(rgba(0, 180, 224, 0.3) 2px, #fff 3px);
+  background-image: radial-gradient(rgba(104, 0, 224, 0.3) 2px, #fff 3px);
   background-size: 15px 15px;
 }
 
 %card {
   font-size: 1rem;
   border-radius: 2px;
-  box-shadow: 8px 8px 0px #00b4e0;
+  box-shadow: 8px 8px 0px $dark-accent-color;
   max-width: 350px;
   min-width: 300px;
   padding: 0.2rem;
 
   img:not(.icon) {
     width: 100%;
-    border-bottom: 1px solid #00b4e0;
+    border-bottom: 1px solid $hover-color;
   }
 }
 
