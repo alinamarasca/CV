@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d6542197350413ce0f498ac9afbe5da7",
+    "revision": "586795451309bd3fae1b791fc3aebabb",
     "url": "/CV/index.html"
   },
   {
-    "revision": "f5655188df29f35216a5",
+    "revision": "7ea86ed363b216199f3c",
     "url": "/CV/static/css/main.fabcc96d.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/js/2.2ea316f9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "00d70d8be3627fbba63f",
-    "url": "/CV/static/js/3.51047106.chunk.js"
+    "revision": "143820da3b49654fa41e",
+    "url": "/CV/static/js/3.c573d739.chunk.js"
   },
   {
-    "revision": "f5655188df29f35216a5",
-    "url": "/CV/static/js/main.9c1c9615.chunk.js"
+    "revision": "7ea86ed363b216199f3c",
+    "url": "/CV/static/js/main.ba2679df.chunk.js"
   },
   {
-    "revision": "19def04da811de8bd713",
-    "url": "/CV/static/js/runtime-main.a79960bf.js"
+    "revision": "78d341356eaaa96e8226",
+    "url": "/CV/static/js/runtime-main.b5db1fd4.js"
   },
   {
     "revision": "1b5a4760ed87e1977951599006b3eb7b",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "07fc8e033e99d1ef7d905d3d5551a1d0",
     "url": "/CV/static/media/bs.07fc8e03.svg"
-  },
-  {
-    "revision": "b7b3faa944d2b22e5a0de0279b9db241",
-    "url": "/CV/static/media/calc.b7b3faa9.jpg"
   },
   {
     "revision": "75f294500da482ea126ce82ccb0cba29",
@@ -70,10 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d2b03fb6c8bcef7e82e4663f23cd3d1b",
     "url": "/CV/static/media/glass.d2b03fb6.jpg"
-  },
-  {
-    "revision": "5be940f99982765c7927716d4dc39b1b",
-    "url": "/CV/static/media/hp.5be940f9.jpg"
   },
   {
     "revision": "6b5d718a8f63a0e45ece6a71dcded807",
@@ -126,6 +118,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3de182d2120823fe49c27eeb1765c53a",
     "url": "/CV/static/media/typescript.3de182d2.svg"
+  },
+  {
+    "revision": "51f7a22548bb076c8bc129d9413ef2e3",
+    "url": "/CV/static/media/weather.51f7a225.jpg"
   },
   {
     "revision": "5cf143ed92021957d964c5f44295d9a2",
